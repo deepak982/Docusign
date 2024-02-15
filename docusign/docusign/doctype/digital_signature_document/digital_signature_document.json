@@ -1,0 +1,94 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "DSD-.####",
+ "creation": "2024-02-15 21:28:54.546640",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "document_type",
+  "print_format",
+  "role_1",
+  "role_2",
+  "role_3",
+  "role_4",
+  "workflow",
+  "do_not_create_workflow"
+ ],
+ "fields": [
+  {
+   "fieldname": "document_type",
+   "fieldtype": "Link",
+   "label": "Document Type",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "role_1",
+   "fieldtype": "Link",
+   "label": "Role 1",
+   "options": "Role"
+  },
+  {
+   "fieldname": "role_2",
+   "fieldtype": "Link",
+   "label": "Role 2",
+   "options": "Role"
+  },
+  {
+   "fieldname": "role_3",
+   "fieldtype": "Link",
+   "label": "Role 3",
+   "options": "Role"
+  },
+  {
+   "fieldname": "role_4",
+   "fieldtype": "Link",
+   "label": "Role 4",
+   "options": "Role"
+  },
+  {
+   "fieldname": "workflow",
+   "fieldtype": "Link",
+   "label": "Workflow",
+   "options": "Workflow"
+  },
+  {
+   "default": "0",
+   "fieldname": "do_not_create_workflow",
+   "fieldtype": "Check",
+   "label": "Do not create workflow"
+  },
+  {
+   "fieldname": "print_format",
+   "fieldtype": "Link",
+   "label": "Print Format",
+   "options": "Print Format"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-02-15 23:43:00.927868",
+ "modified_by": "Administrator",
+ "module": "DocuSign",
+ "name": "Digital Signature Document",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

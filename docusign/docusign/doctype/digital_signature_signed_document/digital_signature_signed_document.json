@@ -1,0 +1,55 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-15 21:45:02.387383",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "document",
+  "certificate",
+  "user",
+  "timestamp",
+  "docusign_envelope_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "document",
+   "fieldtype": "Attach",
+   "label": "Document"
+  },
+  {
+   "fieldname": "certificate",
+   "fieldtype": "Attach",
+   "label": "Certificate"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User"
+  },
+  {
+   "fieldname": "timestamp",
+   "fieldtype": "Datetime",
+   "label": "Timestamp"
+  },
+  {
+   "fieldname": "docusign_envelope_id",
+   "fieldtype": "Data",
+   "label": "Docusign Envelope id"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-02-15 21:46:36.176479",
+ "modified_by": "Administrator",
+ "module": "DocuSign",
+ "name": "Digital Signature Signed Document",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

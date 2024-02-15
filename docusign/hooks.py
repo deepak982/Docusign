@@ -122,13 +122,18 @@ app_license = "mit"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+    "*": {
+        "on_submit": "docusign.api.on_submit",
+    },
+    "DSC Purchase Order": {
+        "validate": "docusign.dsc_api.validate",
+    },
+    "DSC Sales Invoice": {
+        "validate": "docusign.dsc_api.validate",
+    },
+}
+
 
 # Scheduled Tasks
 # ---------------
@@ -150,6 +155,14 @@ app_license = "mit"
 # 		"docusign.tasks.monthly"
 # 	],
 # }
+
+scheduler_events = {
+	"cron": {
+		"*/5 * * * *": [
+			"docusign.dsc_api.dsc_change_status",
+		]
+	}
+}
 
 # Testing
 # -------
@@ -227,3 +240,23 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+user_data_fields = [
+	{
+		"doctype": "{doctype_1}",
+		"filter_by": "{filter_by}",
+		"redact_fields": ["{field_1}", "{field_2}"],
+		"partial": 1,
+	},
+	{
+		"doctype": "{doctype_2}",
+		"filter_by": "{filter_by}",
+		"partial": 1,
+	},
+	{
+		"doctype": "{doctype_3}",
+		"strict": False,
+	},
+	{
+		"doctype": "{doctype_4}"
+	}
+]

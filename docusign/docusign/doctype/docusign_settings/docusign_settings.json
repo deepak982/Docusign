@@ -1,0 +1,59 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-15 21:59:07.825041",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "account_id",
+  "integration_key",
+  "secret_key",
+  "base_path"
+ ],
+ "fields": [
+  {
+   "fieldname": "account_id",
+   "fieldtype": "Data",
+   "label": "Account ID"
+  },
+  {
+   "fieldname": "integration_key",
+   "fieldtype": "Data",
+   "label": "Integration Key"
+  },
+  {
+   "fieldname": "secret_key",
+   "fieldtype": "Password",
+   "label": "Secret Key"
+  },
+  {
+   "fieldname": "base_path",
+   "fieldtype": "Data",
+   "label": "Base Path"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-02-15 22:00:25.910924",
+ "modified_by": "Administrator",
+ "module": "DocuSign",
+ "name": "Docusign Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
