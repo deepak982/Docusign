@@ -15,7 +15,7 @@ def on_submit(self,method):
             doc.workflow = workflow
             doc.pdf_document = get_pdf_link(self.doctype, self.name, print_format)
             doc.save()
-            doc.submit() 
+            # doc.submit() 
             frappe.msgprint(_("Created a new digital signature document {0}").format(get_link_to_form(f"DSC {self.doctype}", doc.name)))
 
 def get_digital_signature_documents(doctype):
